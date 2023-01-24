@@ -38,6 +38,8 @@
     --body-accent: var(--amber-500);
     --body-light-accent: var(--violet-300);
     --link-color: var(--violet-600);
+    --link-btn-bg: var(--violet-700);
+    --link-btn-fg: var(--violet-200);
 }
 
 [data-theme="dark"] {
@@ -50,6 +52,8 @@
     --body-accent: var(--amber-300);
     --body-light-accent: var(--violet-400);
     --link-color: var(--emerald-400);
+    --link-btn-bg: var(--emerald-300);
+    --link-btn-fg: var(--gray-700);
 }
 
 * {

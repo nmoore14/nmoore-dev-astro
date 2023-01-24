@@ -1,0 +1,22 @@
+---
+const { title, href } = Astro.props;
+---
+
+<a class="link-btn link" href={ href }>{ title }</a>
+
+<style>
+    .link-btn {
+        background-color: var(--link-btn-bg);
+        padding: .5rem 1rem;
+        border-radius: .5rem;
+        margin: .25rem 0 .25rem 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .link {
+        font-family: var(--body-font);
+        font-size: 2rem;
+        color: var(--link-btn-fg);
+    }
+</style>

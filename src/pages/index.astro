@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import LinkButton from '../components/LinkButton.astro';
 ---
 
 <BaseLayout>
@@ -24,13 +25,9 @@ import BaseLayout from '../layouts/BaseLayout.astro';
                 <img src="/assets/images/nick_levi-beach_22.jpg" alt="Picture of Nick and his son">
             </div>
             <div class="info-card-content">
-                <p>
-                    <span class="span-title">Hello!</span><br/>
-                    My name is Nick Moore<br/>
-                    Junior<br/>
-                    Studying Information Technology<br/>
-                    <small>Links to other work below!</small>
-                </p>
+                <LinkButton title="About" href="/about/" />
+                <LinkButton title="Blog" href="/blog/" />
+                <LinkButton title="Projects" href="/projects/" />
             </div>
             <div class="info-card-links">
                 <a href="https://github.com/nmoore14"><!-- GITHUB -->
