@@ -1,6 +1,8 @@
 ---
 import '../styles/main.css';
 import Header from '../components/Header.astro';
+
+const { pageTitle } = Astro.props;
 ---
 
 <html lang="en">
@@ -9,9 +11,10 @@ import Header from '../components/Header.astro';
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
 	</head>
 	<body>
-        <Header />
+        <Header pageTitle={pageTitle}/>
 		<main>
             <slot />
 		</main>

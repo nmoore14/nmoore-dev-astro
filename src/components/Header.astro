@@ -1,4 +1,5 @@
 ---
+const { pageTitle } = Astro.props;
 ---
 <div class="header-graphic" id="header-graphic">
     <img class="header-image" id="header-image-light" src="/assets/images/bg-wave-1.png">
@@ -9,10 +10,16 @@
         <h1 class="header-lowercase header-gradient-text">Nick Moore</h1>
     </div>
     <div class="header-actions">
-        <nav class="header-nav">
-            <a href="./projects" class="nav-item">PROJECTS</a>
-            <a href="./blog" class="nav-item">BLOG</a>
-        </nav>
+        { pageTitle != 'index' && 
+            <nav class="header-nav">
+                <a href="/">
+                    <span class="iconify" data-icon="mdi:home"></span>
+                </a>
+                <a href="/about" class="nav-item">ABOUT</a>
+                <a href="/blog" class="nav-item">BLOG</a>
+                <a href="/projects" class="nav-item">PROJECTS</a>
+            </nav>
+        }
         <div class="header-theme-toggle">
             <label class="theme-switch" for="checkbox">
                 <input
