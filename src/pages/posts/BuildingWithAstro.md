@@ -6,5 +6,7 @@ author: 'Nick Moore'
 image:
     url: 'https://astro.build/assets/blog/astro-1-release-update/cover.jpeg'
     alt: 'The Astro logo with the word one'
-tags: ["astro", "blogging", "learning in public"]
+tags: ["astro", "blogging", "learning in public", "web dev"]
 ---
+## Intro
+Welcome to my first post
