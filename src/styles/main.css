@@ -571,5 +571,10 @@ main {
 
     .main-content-info-card {
         width: 80%;
+        height: auto;
+    }
+
+    .info-card-links {
+        padding-bottom: 1rem;
     }
 }
