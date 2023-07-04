@@ -158,6 +158,10 @@ h3 {
     align-items: center;
 }
 
+.main-nav {
+    column-gap: 1rem;
+}
+
 .header-nav {
     justify-content: flex-start;
     width: 100%;
@@ -181,9 +185,7 @@ h3 {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: flex-end;
     align-items: center;
-    width: 50%;
 }
 
 .theme-switch {
