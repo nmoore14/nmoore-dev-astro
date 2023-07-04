@@ -11,13 +11,13 @@ const { pageTitle } = Astro.props;
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-        <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+		<script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
 	</head>
 	<body>
-        <Header pageTitle={pageTitle}/>
+		<Header pageTitle={pageTitle}/>
 		<main>
-            <slot />
+			<slot />
 		</main>
 	</body>
-    <script src="../scripts/main.js"></script>
+	<script src="../scripts/main.js"></script>
 </html>
