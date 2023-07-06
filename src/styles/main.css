@@ -2,8 +2,8 @@
 * Sources and References
 * Toggle switch css from https://dev.to/ananyaneogi/create-a-dark-light-mode-switch-with-css-variables-34l8
 */
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,700;1,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400&display=swap');
 @import url('./layout.css');
 
 @import url('./components/hero.css');
@@ -35,8 +35,8 @@
     --linear-primary: linear-gradient(to right, var(--violet-600) 0%, var(--violet-800) 100%);
     --linear-glass: linear-gradient(to bottom right, rgba(75, 85, 99, .25), rgba(229, 231, 235, .25));
     --linear-glass-mobile: linear-gradient(to bottom right, rgba(75, 85, 99, .55), rgba(229, 231, 235, .75));
-    --header-font: 'Ubuntu', sans-serif;
-    --body-font: 'Ubuntu Mono', sans-serif;
+    --header-font: 'Roboto Condensed', sans-serif;
+    --body-font: 'Work Sans', sans-serif;
     --body-color: var(--gray-700);
     --body-accent: var(--amber-500);
     --body-light-accent: var(--violet-300);
@@ -88,10 +88,17 @@ h1 {
 }
 
 h3 {
-    font-family: var(--header-font);
-    font-weight: bold;
+    font-family: var(--body-font);
+    font-weight: 400;
     font-style: italic;
     font-size: 2rem;
+    color: var(--fg-primary);
+}
+
+p {
+    font-family: var(--body-font);
+    font-weight: 300;
+    line-height: 1.6rem;
     color: var(--fg-primary);
 }
 
@@ -109,9 +116,9 @@ h3 {
 
 .header-gradient-text {
     background: var(--linear-primary);
-	background-clip: text;
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     transition: ease-in-out .5s;
 }
 
@@ -303,10 +310,6 @@ main {
     font-weight: 300;
 }
 
-.main-blob {
-    position: absolute;
-    z-index: 0;
-}
 
 .main-content-info-card {
     display: flex;
