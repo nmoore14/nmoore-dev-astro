@@ -2,9 +2,8 @@
 * Sources and References
 * Toggle switch css from https://dev.to/ananyaneogi/create-a-dark-light-mode-switch-with-css-variables-34l8
 */
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,400;0,700;1,400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400&display=swap');
 @import url('./layout.css');
+@import url('./fonts.css');
 
 @import url('./components/hero.css');
 @import url('./components/footer.css');
@@ -82,27 +81,6 @@ body {
     height: 100vh;
 }
 
-h1 {
-    font-family: var(--header-font);
-    font-weight: bold;
-    font-size: 3rem;
-    color: var(--fg-primary);
-}
-
-h3 {
-    font-family: var(--body-font);
-    font-weight: 400;
-    font-style: italic;
-    font-size: 2rem;
-    color: var(--fg-primary);
-}
-
-p {
-    font-family: var(--body-font);
-    font-weight: 300;
-    line-height: 1.6rem;
-    color: var(--fg-primary);
-}
 
 .header-title {
     width: 100%;

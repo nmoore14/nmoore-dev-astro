@@ -20,6 +20,11 @@
 	text-align: left;
     }
 
+    .hero-content-subtitle {
+	font-style: normal;
+	text-align: left;
+    }
+
     .hero-content-tag {
 	font-size: 1.5rem;
     }
