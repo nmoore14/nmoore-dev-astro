@@ -1,46 +1,10 @@
 ---
-const { pageTitle } = Astro.props;
+import Navbar from "./Navbar.astro";
 ---
 <div class="header-graphic" id="header-graphic">
     <img class="header-image" id="header-image-light" src="/assets/images/bg-wave-1.png">
     <img class="header-image" id="header-image-dark" src="/assets/images/bg-wave-2.png">
 </div>
-<header class="header-main">
-    <div class="flex flex-row justify-between items-center header-title">
-        <a href="/" class="header-title-link">
-            <h1 class="header-lowercase header-gradient-text">Nick Moore</h1>
-        </a>
-        <div class="flex flex-row justify-end items-center header-actions">
-            <nav class="flex flex-row justify-center items-center mr-1 main-nav">
-                <a href="/about" class="nav-item">ABOUT</a>
-                <a href="/blog" class="nav-item">BLOG</a>
-                <a href="/projects" class="nav-item">PROJECTS</a>
-            </nav>
-            <div class="header-theme-toggle">
-                <label class="theme-switch" for="checkbox">
-                    <input
-                        type="checkbox"
-                        id="checkbox"
-                        class="js-theme-checkbox"
-                    />
-                    <div class="slider round"></div>
-                </label>
-                <span
-                    class="iconify sunglasses sunglasses-color"
-                    data-icon="mdi:sunglasses"></span>
-            </div>
-        </div>
-    </div>
-    <div class="header-actions">
-        { pageTitle != 'index' && 
-            <nav class="flex flex-row items-center header-nav">
-                <a href="/">
-                    <span class="iconify" data-icon="mdi:home"></span>
-                </a>
-                <a href="/about" class="nav-item">ABOUT</a>
-                <a href="/blog" class="nav-item">BLOG</a>
-                <a href="/projects" class="nav-item">PROJECTS</a>
-            </nav>
-        }
-    </div>
+<header class="flex flex-row flex-wrap justify-between items-center w-full h-auto py-4 px-8">
+    <Navbar />
 </header>

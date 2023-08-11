@@ -14,6 +14,9 @@ dependencies:
   astro-icon:
     specifier: ^0.8.1
     version: 0.8.1
+  astro-navbar:
+    specifier: ^2.0.1
+    version: 2.0.1
   svelte:
     specifier: ^3.48.0
     version: 3.59.2
@@ -1028,6 +1031,10 @@ packages:
       node-fetch: 3.3.1
       resolve-pkg: 2.0.0
       svgo: 2.8.0
+    dev: false
+
+  /astro-navbar@2.0.1:
+    resolution: {integrity: sha512-pnnsYJEmXfrmwNSHuvPk5oXvzePON4g3UGY7I0Un6ZL34Ua6pve+nFOqoKwmRXqZl3UV22+awsP3uk5l2AQTNA==}
     dev: false
 
   /astro@2.7.0:

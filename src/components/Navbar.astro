@@ -1,0 +1,45 @@
+---
+import {
+Astronav,
+MenuItems,
+MenuIcon,
+} from "astro-navbar";
+---
+<Astronav closeOnClick>
+   <div class="flex w-full lg:w-auto justify-between items-center">
+     <a href="/" class="header-title-link">
+         <h1 class="text-3xl md:text-5xl font-bold header-lowercase header-gradient-text">Nick Moore</h1>
+     </a>
+      <div class="block lg:hidden">
+         <MenuIcon class="w-8 h-8 menu-icon" />
+      </div>
+   </div>
+   <MenuItems class="hidden lg:flex">
+      <ul class="flex flex-col items-start md:items-center lg:flex-row lg:gap-5">
+         <li>
+             <a href="/about" class="text-xl text-left nav-item">ABOUT</a>
+         </li>
+         <li>
+             <a href="/blog" class="text-xl text-left nav-item">BLOG</a>
+         </li>
+         <li>
+             <a href="/projects" class="text-xl text-left nav-item">PROJECTS</a>
+         </li>
+         <li>
+            <div class="header-theme-toggle">
+               <label class="theme-switch" for="checkbox">
+                  <input type="checkbox" id="checkbox" class="js-theme-checkbox" />
+                  <div class="slider round"></div>
+               </label>
+               <span class="iconify sunglasses sunglasses-color"data-icon="mdi:sunglasses"></span>
+            </div>
+         </li>
+      </ul>
+   </MenuItems>
+</Astronav>
+
+<style>
+.menu-icon {
+   color: var(--link-color);  
+}
+</style>
