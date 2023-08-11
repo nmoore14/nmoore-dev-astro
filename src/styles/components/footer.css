@@ -3,3 +3,26 @@ footer {
     height: 4rem;
     background-color: var(--footer-bg);
 }
+
+    .footer-left {
+	color: var(--link-color);
+	gap: 1.5rem;
+    }
+
+	.footer-left > h2 {
+	    color: var(--link-color);
+	}
+
+    .footer-middle {
+	color: var(--link-color);
+	gap: 1.5rem;
+
+    }
+	.footer-middle > h2 {
+	    color: var(--link-color);
+	}
+
+    .footer-right {
+	color: var(--link-color);
+	gap: 1.5rem;
+    }

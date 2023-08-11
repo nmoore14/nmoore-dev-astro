@@ -1,8 +1,8 @@
 ---
-const { title, href } = Astro.props;
+const { title, href, variant } = Astro.props;
 ---
 
-<a class="link-btn link" href={ href }>{ title }</a>
+<a class={ `${ variant ? variant : 'link-btn'} link` } href={ href }>{ title }</a>
 
 <style>
     .link-btn {
@@ -12,11 +12,35 @@ const { title, href } = Astro.props;
         margin: .25rem 0 .25rem 0;
         width: 100%;
         text-align: center;
+        color: var(--link-btn-fg);
     }
 
     .link {
         font-family: var(--body-font);
         font-size: 2rem;
-        color: var(--link-btn-fg);
     }
+
+    .link-ghost-outlined-btn {
+        background-color: rgba(0, 0, 0, 0);
+        padding: .5rem 1rem;
+        border-radius: .5rem;
+        border: 2px solid var(--link-btn-bg);
+        margin: .25rem 0 .25rem 0;
+        width: 100%;
+        text-align: center;
+        color: var(--link-btn-bg);
+        text-decoration: none;
+    }
+
+    .link-ghost-btn {
+        background-color: rgba(0, 0, 0, 0);
+        padding: .5rem 1rem;
+        border-radius: .5rem;
+        margin: .25rem 0 .25rem 0;
+        width: 100%;
+        text-align: center;
+        color: var(--link-btn-bg);
+        text-decoration: none;
+    }
+
 </style>

@@ -42,7 +42,7 @@
     --link-color: var(--violet-600);
     --link-btn-bg: var(--violet-700);
     --link-btn-fg: var(--violet-200);
-    --footer-bg: var(--emerald-400);
+    --footer-bg: #F1F5F9;
 }
 
 [data-theme="dark"] {
@@ -57,7 +57,7 @@
     --link-color: var(--emerald-400);
     --link-btn-bg: var(--emerald-300);
     --link-btn-fg: var(--gray-700);
-    --footer-bg: var(--violet-400);
+    --footer-bg: #2E3B4D;
 }
 
 * {
